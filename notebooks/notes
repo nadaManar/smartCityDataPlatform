@@ -1,0 +1,32 @@
+Objectif du projet
+
+c’est construire un tableau de bord prédictif qui affiche la pollution fine (PM2.5) et la prédit à partir des variables les plus importantes de ton dataset quand doit trouver par nos meme.
+
+
+Créer un dashboard interactif qui montre :
+
+La qualité de l’air (pollution, particules fines, ozone).
+
+Les conditions météo (température, humidité, vent).
+Et utiliser des modèles de Machine Learning / Deep Learning pour prédire l’évolution de ces indicateurs.
+
+
+python -m venv venv
+venv\Scripts\activate      # Windows
+
+pip install pandas numpy scikit-learn matplotlib seaborn streamlit pyspark
+on a trouve
+Variables météo : temp_category, comfort_proxy, has_rain, has_snow, wind_compass, etc.
+
+Variables pollution : pm2_5, pm10, co, no2, o3, so2, nh3.
+
+Cibles à prédire : target_pm25.
+
+
+
+pip install xgboost
+streamlit run notebooks/app.py
+let's make it better 
+mkdir .streamlit
+config.toml
+
